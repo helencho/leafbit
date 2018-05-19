@@ -5,7 +5,14 @@
     "appDisplayName": "Leafbit",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "run_background",
+      "access_internet"
+    ],
     "buildTargets": [
       "higgs",
       "meson"

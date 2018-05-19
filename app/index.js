@@ -30,16 +30,21 @@ clock.ontick = (evt) => {
 
 // DISPLAY TREE 
 // Define goal. This would come from the seed user chose 
-const goalSteps = goals.steps || 0;
-const localSteps = today.local.steps || 0;
-const progress = (localSteps / goalSteps) * 100;
+
 
 // Update step progress 
 // util.updateSteps(progress);
 display.onchange = () => {
+  const goalSteps = goals.steps || 0;
+  const localSteps = today.local.steps || 0;
+  const progress = (localSteps / goalSteps) * 100;
   if(display.on) {
     console.log('ON');
+    console.log(progress)
     util.updateSteps(progress);
   }
 }
+const progress = (localSteps / goalSteps) * 100;
+const goalSteps = goals.steps || 0;
+const localSteps = today.local.steps || 0;
 util.updateSteps(progress);

@@ -10,24 +10,31 @@ export const zeroPad = (i) => {
 }
 
 // Update steps 
-let tree = document.getElementById("tree");
+
 
 export const updateSteps = (progress) => {
+  let tree = document.getElementById("tree");
+  let progressBar = document.getElementById("progress")
   switch (true) {
-    case progress < 33:
-      tree.href = "../resources/assets/healthy_growing.png";
+    case (progress < 20):
+      progressBar.href = "../resources/assets/progress_bar/progress_bar.png";
       break;
-    case progress < 66:
-      tree.href = "../resources/assets/after_2_weeks.png";
+    case (progress < 40):
+      progressBar.href = "../resources/assets/progress_bar/progress_bar_1.png";
       break;
-    case progress < 99:
-      tree.href = "../resources/assets/variation_1@4x.png";
+    case (progress < 60):
+      progressBar.href = "../resources/assets/progress_bar/progress_bar_2.png";
       break;
-    case progress >= 100:
-      tree.href = "../resources/assets/variation_2@4x.png";
+    case (progress < 80):
+      progressBar.href = "../resources/assets/progress_bar/progress_bar_3.png";
+      break;
+    case (progress >= 100):
+      progressBar.href = "../resources/assets/progress_bar/progress_bar_full.png";
+      tree.href = "../resources/assets/after_2_weeks.png"
       break;
     default:
-      tree.href = "../resources/assets/healthy_growing.png";
-      break;
+     progressBar.href = "../resources/assets/progress_bar/progress_bar.png";
+     break;
   }
+  console.log(tree.href)
 }

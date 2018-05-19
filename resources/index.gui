@@ -8,6 +8,9 @@
      </svg>
   </svg>
   <svg class="tree-container">
-      <image id="tree" href="" load="sync" />
+      <image id="tree" href="../resources/assets/healthy_growing.png" load="sync" />
+  </svg>
+    <svg class="progress-container">
+      <image id="progress" href="" load="sync" />
   </svg>
 </svg>
