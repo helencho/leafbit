@@ -35,4 +35,11 @@ const localSteps = today.local.steps || 0;
 const progress = (localSteps / goalSteps) * 100;
 
 // Update step progress 
+// util.updateSteps(progress);
+display.onchange = () => {
+  if(display.on) {
+    console.log('ON');
+    util.updateSteps(progress);
+  }
+}
 util.updateSteps(progress);
