@@ -1,7 +1,8 @@
 .background {
-  viewport-fill: rgba(0,0,0,.5);
+  viewport-fill: #564b45;
   width: 100%;
 }
+
 
 #time {
   font-size: 45;
@@ -12,7 +13,7 @@
   width: 40%;
   x: 83%;
   y: 17%;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .tree-container {
