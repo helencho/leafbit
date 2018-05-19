@@ -1,3 +1,14 @@
 <svg class="background">
-  <text id="myLabel" />
+  <svg class="header">
+    <image id="bg" href="assets/background.png" width="100%" height="100%"/>
+    <svg class="time-container">
+      <text id="time" />
+    </svg>
+    <svg class="title-container">
+      <image class="title-image" href="assets/icon.png" load="sync" />
+     </svg>
+  </svg>
+  <svg class="tree-container">
+      <image id="tree" href="" load="sync" />
+  </svg>
 </svg>
