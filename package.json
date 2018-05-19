@@ -1,0 +1,19 @@
+{
+  "fitbit": {
+    "appUUID": "3d2608cb-6a9c-42a7-87dd-0d944417b9ee",
+    "appType": "clockface",
+    "appDisplayName": "Leafbit",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Leafbit"
+      }
+    }
+  }
+}
