@@ -7,7 +7,10 @@ import * as util from "../common/utils";
 clock.granularity = "minutes";
 
 // Get a handle on the <text> element
-const myLabel = document.getElementById("myLabel");
+const myLabel = document.getElementById("time");
+
+let tree = document.getElementById("tree");
+tree.href= "../resources/assets/healthy_growing.png"
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
@@ -20,6 +23,8 @@ clock.ontick = (evt) => {
     // 24h format
     hours = util.zeroPad(hours);
   }
+  
+  
   let mins = util.zeroPad(today.getMinutes());
   myLabel.text = `${hours}:${mins}`;
 }

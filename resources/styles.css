@@ -1,13 +1,34 @@
 .background {
-  viewport-fill: red;
+  viewport-fill: rgba(0,0,0,.5);
+  width: 100%;
 }
 
-#myLabel {
-  font-size: 80;
-  font-family: System-Bold;
-  text-length: 32;
+#time {
+  font-size: 35;
+  text-length: 50;
+  font-weight: bold;
   text-anchor: middle;
-  x: 50%;
-  y: 50%+40;
-  fill: white;
+  font-family: Colfax;
+  width: 40%;
+  x: 83%;
+  y: 17%;
+  fill: #FFFFFF;
+}
+
+.tree-container {
+  width: 100%;
+}
+
+#tree {
+  width: 48%;
+  height: 65%;
+  x: 28%;
+  y: 25%;
+}
+
+.title-image {
+  x: 7%;
+  y: 7%;
+  width: 23%;
+  height: 9%;
 }
