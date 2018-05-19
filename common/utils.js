@@ -1,3 +1,4 @@
+import document from "document";
 import { display } from "display";
 
 // Add zero in front of numbers < 10
