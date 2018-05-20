@@ -1,22 +1,22 @@
-import clock from 'clock';
-import { display } from 'display';
-import document from 'document';
-import { preferences } from 'user-settings';
-import * as util from '../common/utils';
-import { goals, today } from 'user-activity';
+import clock from "clock";
+import { display } from "display";
+import document from "document";
+import { preferences } from "user-settings";
+import * as util from "../common/utils";
+ import { goals, today } from "user-activity";
 
 // DISPLAY CLOCK
 // Update the clock every minute
-clock.granularity = 'minutes';
+clock.granularity = "minutes";
 
 // Get a handle on the <text> element
-const myLabel = document.getElementById('time');
-const tree = document.getElementById('tree');
+const myLabel = document.getElementById("time");
+const tree = document.getElementById("tree")
 // Update the <text> element every tick with the current time
-clock.ontick = evt => {
+clock.ontick = (evt) => {
   let today = evt.date;
   let hours = today.getHours();
-  if (preferences.clockDisplay === '12h') {
+  if (preferences.clockDisplay === "12h") {
     // 12h format
     hours = hours % 12 || 12;
   } else {
@@ -25,47 +25,51 @@ clock.ontick = evt => {
   }
   let mins = util.zeroPad(today.getMinutes());
   myLabel.text = `${hours}:${mins}`;
-};
+}
 
-// DISPLAY TREE
-// Define goal. This would come from the seed user chose
 
-// Update step progress
+
+
+// DISPLAY TREE 
+// Define goal. This would come from the seed user chose 
+
+
+// Update step progress 
 // util.updateSteps(progress);
 
-let animationStage = 1;
-let treeImage;
+let animationStage = 1
+let treeImage
 
 setInterval(() => {
   if (animationStage > 0) {
-    if (animationStage === 1) {
-      animationStage = 2;
-    } else if (animationStage === 2) {
-      animationStage = 3;
-    } else if (animationStage === 3) {
-      animationStage = 1;
-    }
-    treeImage = '../resources/assets/plant/plant_' + animationStage + '.png';
-    tree.href = treeImage;
+  if (animationStage === 1) {
+    animationStage = 2
+  } else if (animationStage === 2) {
+    animationStage = 3
+  } else if (animationStage === 3) {
+    animationStage = 1
   }
-}, 400);
+  treeImage = '../resources/assets/plant/plant_'+animationStage+'.png'
+  tree.href = treeImage
+  }
+},400)
 
 display.onchange = () => {
-  if (display.on) {
-    const goalSteps = goals.steps || 0;
-    const localSteps = today.adjusted.steps || 0;
-    const progress = localSteps / goalSteps * 100;
-    console.log(progress);
+  if(display.on) {
+  const goalSteps = goals.steps || 0;
+  const localSteps = today.adjusted.steps || 0;
+  const progress = (localSteps / goalSteps) * 100;
+    console.log(progress)
     if (progress >= 100) {
-      animationStage = 0;
-      tree.href = '../resources/assets/after_2_weeks.png';
+      animationStage = 0
+      tree.href = "../resources/assets/after_2_weeks.png"
     } else {
-      animationStage = 1;
+      animationStage = 1
     }
     util.updateSteps(progress);
   }
-};
-const progress = localSteps / goalSteps * 100;
+}
+const progress = (localSteps / goalSteps) * 100;
 const goalSteps = goals.steps || 0;
 const localSteps = today.adjusted.steps || 0;
 util.updateSteps(progress);
