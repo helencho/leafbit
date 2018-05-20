@@ -10,4 +10,7 @@
   <svg class="tree-container">
       <image id="tree" href="" load="sync" />
   </svg>
+    <svg class="progress-container">
+      <image id="progress" href="" load="sync" />
+  </svg>
 </svg>

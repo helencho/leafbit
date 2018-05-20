@@ -24,7 +24,14 @@
   width: 48%;
   height: 65%;
   x: 28%;
-  y: 25%;
+  y: 18%;
+}
+
+#progress {
+  width: 33%;
+  height: 5%;
+  x: 35%;
+  y: 87%;
 }
 
 .title-image {
