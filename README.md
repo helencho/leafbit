@@ -1,6 +1,10 @@
 # Leafbit :seedling:
 
-Buy a seed. Watch your tree grow as you progress towards your activity goals. Plant your tree on the map when the tree reaches its maturity :deciduous_tree:. Feel good about partner organizations planting a tree in real life. 
+Buy a seed. Watch your tree grow as you progress towards your activity goals. Plant your tree on the map when the tree reaches its maturity :deciduous_tree:. 
+
+Feel good about partner organizations planting a tree in real life. 
+
+This Fitbit clock face works together with [Leafbit Web App](https://github.com/husheric/LeafbitWeb).
 
 ## Features 
 
