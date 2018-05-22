@@ -32,13 +32,13 @@ Empower and inspire users to live a healthier, more active life.
 
 ## Contributors 
 
-[David](https://github.com/davidyshin)
+[David](https://github.com/davidyshin) - Developer 
 
-[Eric](https://github.com/husheric)
+[Eric](https://github.com/husheric) - Developer 
 
-[Yueran]()
+[Yueran]() - UI/UX Designer
 
-[Helen](https://github.com/helencho)
+[Helen](https://github.com/helencho) - Developer
 
 ## Technologies
 
