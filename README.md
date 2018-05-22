@@ -8,19 +8,19 @@ Buy a seed. Watch your tree grow as you progress towards your activity goals. Pl
 
 See the current progress of your tree (paired with Fitbit)
 
-![Home](./assets/leafbit-home-iphone6.png) 
+<img src="./assets/leafbit-home-iphone6.png" height="600" alt="Home"> 
 
 **Marketplace**
 
 Buy your seeds and set goals for seeds
 
-![Marketplace](./assets/leafbit-marketplace-iphone6.png)
+<img src="./assets/leafbit-marketplace-iphone6.png" height="600" alt="Home">
 
 **Plant** 
 
 Once your tree reaches its maturity, plant a tree on the map 
 
-![Map](./assets/leafbit-map-iphone6.png)
+<img src="./assets/leafbit-map-iphone6.png" height="600" alt="Home">
 
 ## Fitbit Challenge
 
