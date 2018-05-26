@@ -1,5 +1,7 @@
 # Leafbit :seedling:
 
+![Marketplace](./assets/market-screely.png)
+
 Buy a seed. Watch your tree grow as you progress towards your activity goals. Plant your tree on the map when the tree reaches its maturity :deciduous_tree:. 
 
 Feel good about partner organizations planting a tree in real life. 
