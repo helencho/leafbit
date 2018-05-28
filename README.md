@@ -6,7 +6,7 @@ Feel good about partner organizations planting a tree in real life.
 
 This Fitbit clock face works together with [Leafbit Web App](https://github.com/husheric/LeafbitWeb).
 
-![Marketplace](./assets/market-screely.png)
+![Marketplace](./assets/market-screely-2.png)
 
 ## Features 
 
